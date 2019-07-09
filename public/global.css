@@ -1,0 +1,74 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.mint-header {
+    font-size: 18px !important;
+    background-color: #ffffff !important;
+    color: #333333 !important;
+    margin-bottom: 10px;
+}
+
+.button-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0 25px;
+    background-color: #f2f2f2
+}
+
+.button {
+    width: 92vw;
+    background-color: #3785ea
+}
+
+.button2{
+    width: 92vw;
+}
+
+.mint-cell-wrapper {
+    background-image: none !important;
+}
+
+.bg {
+    background-color: #f2f2f2;
+}
+
+.camera {
+    width: 30vw;
+    height: 36vw;
+}
+
+/* ---------------------------------------------------------------------------------------------------重写radio chexkbox样式 */
+input {
+    width: 5.33vw;
+    height: 5.33vw;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    visibility: hidden;
+}
+
+input[type=radio]:checked::after,
+input[type=checkbox]:checked::after {
+    background-image: url('../src/assets/input-active.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    visibility: visible;
+    /*border-radius: 50%;*/
+}
+
+input[type=radio]::after,
+input[type=checkbox]::after {
+    content: ' ';
+    display: block;
+    height: 5.33vw;
+    width: 5.33vw;
+    background-image: url('../src/assets/input-noactive.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    visibility: visible;
+    /*border-radius: 50%;*/
+}
